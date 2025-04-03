@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sümela Grillhaus</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Ladeanimation -->
+<div id="loading-animation">
+  <div class="loading-content">
+    <h1 class="loading-text">Sümela Grillhaus</h1>
+  </div>
+</div>
+  <header>
+    <nav>
+      <div class="logo">Sümela Grillhaus</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="speisekarte.html">Speisekarte</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="impressum.html">Impressum</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero-Sektion mit Video -->
+    <section class="hero">
+      <video autoplay muted loop playsinline preload="metadata" loading="eager" class="hero-video">
+        <source src="hero.mp4" type="video/mp4">
+        Ihr Browser unterstützt das Video-Tag nicht.
+      </video>
+      <div class="hero-content">
+        <h1>Willkommen im Sümela Grillhaus</h1>
+        <p>Genießen Sie authentische Küche in modernem Ambiente.</p>
+      <!--  <a href="speisekarte.html" class="btn">Zur Speisekarte</a> -->
+        	<!-- If you would like to customize the button, remove or change the "class" attribute inside the <span> tag -->
+<span class="btn" data-glf-cuid="6b4a1268-bc5e-4cca-bccf-26b9a8309349" data-glf-ruid="03612477-8aed-4778-b296-d183eeb8cb35" >MENÜ ansehen & bestellen</span>
+<script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async ></script>
+      </div>
+    </section>
+
+    <!-- Über uns Sektion -->
+    <section class="about">
+      <div class="about-container">
+        <div class="about-text">
+          <h2>Über uns</h2>
+          <p>Wir sind ein familiengeführtes Restaurant, das sich auf frische Zutaten und traditionelle Rezepte spezialisiert hat. Unsere Gerichte werden mit Liebe zubereitet und bieten ein unvergessliches Geschmackserlebnis.</p>
+        </div>
+        <div class="about-image">
+          <img src="about.jpg" alt="About Bild" loading="eager">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Sümela Grillhaus. Alle Rechte vorbehalten.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js')
+        .then(() => console.log('Service Worker registered'))
+        .catch((error) => console.log('Service Worker registration failed:', error));
+    }
+  </script>
+  
+</body>
+</html>

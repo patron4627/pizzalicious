@@ -1,0 +1,601 @@
+/* Allgemeine Stile */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #333;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+}
+
+/* Header */
+header {
+  background: rgba(202, 142, 70, 0.5); /* Transparenz auf 0.5 setzen */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #fff;
+  font-family: 'Playfair Display', serif;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-left: 2.5rem;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ffd700;
+  transform: translateY(-2px);
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background: #fff;
+  margin: 4px;
+  transition: all 0.3s ease;
+}
+
+/* Burger-Menü Animation */
+.burger.active .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.burger.active .line2 {
+  opacity: 0;
+}
+
+.burger.active .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* Hero-Sektion mit Video */
+.hero, .menu-hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.hero::before, .menu-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7); /* Dunklerer Overlay (0.7 statt 0.5) */
+  z-index: 0;
+}
+
+.hero-content, .menu-hero .hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1, .menu-hero h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.hero p, .menu-hero p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+.btn {
+  background: #ff5733;
+  color: #fff;
+  padding: 0.75rem 2rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #e64a2e;
+}
+
+/* Über uns Sektion */
+.about {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.about-text {
+  flex: 1;
+  font-family: 'Playfair Display', serif;
+  color: #2c3e50;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  font-weight: 400;
+}
+
+.about-image {
+  flex: 1;
+  max-width: 50%;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Speisekarten-Sektion */
+.menu {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.menu h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: 'Playfair Display', serif;
+  color: #2c3e50;
+}
+
+.menu-category {
+  margin-bottom: 3rem;
+}
+
+.menu-category h3 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-family: 'Playfair Display', serif;
+  color: #ca8e46;
+  border-bottom: 2px solid #ca8e46;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.menu-item:last-child {
+  border-bottom: none;
+}
+
+.item-info h4 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.item-info p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.item-price {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #ca8e46;
+  margin-left: 1rem;
+  white-space: nowrap;
+}
+/* Tabs */
+.menu-tabs {
+display: flex;
+justify-content: center;
+margin-bottom: 2rem;
+}
+
+.tab-link {
+background: none;
+border: none;
+padding: 0.75rem 1.5rem;
+font-size: 1rem;
+font-weight: 500;
+color: #333;
+cursor: pointer;
+transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.tab-link.active {
+color: #ca8e46;
+border-bottom: 2px solid #ca8e46;
+}
+
+.tab-link:hover {
+color: #ca8e46;
+}
+
+/* Kategorien */
+.menu-category {
+display: none;
+}
+
+.menu-category.active {
+display: block;
+}
+
+/* Hero-Sektion (Kontaktseite) */
+.contact-hero {
+  background: url('contact-hero.jpg') no-repeat center center/cover;
+  height: 100vh; /* Etwas kleiner als auf der Startseite */ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+.contact-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dunkler Overlay für bessere Lesbarkeit */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Kontakt-Sektion */
+.contact {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-info {
+  background: #f9f9f9;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+}
+
+.contact-info h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-family: 'Playfair Display', serif;
+  color: #2c3e50;
+}
+
+.contact-info p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.contact-info a {
+  color: #ca8e46;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+  color: #b87d3d;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-info ul li {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive Stile für die Kontaktseite */
+@media (max-width: 768px) {
+  .contact-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .contact-hero p {
+    font-size: 1.2rem;
+  }
+
+  .contact-info {
+    padding: 1.5rem;
+  }
+}
+
+/* Impressum-Sektion */
+.impressum {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.impressum-container {
+  background: #f9f9f9;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.impressum h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  font-family: 'Playfair Display', serif;
+  color: #2c3e50;
+}
+
+.impressum h2 {
+  font-size: 1.75rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-family: 'Playfair Display', serif;
+  color: #2c3e50;
+}
+
+.impressum p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.impressum a {
+  color: #ca8e46;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.impressum a:hover {
+  color: #b87d3d;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Responsive Stile */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: rgba(202, 142, 70, 0.95);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 1rem;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 1rem 0;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .hero h1, .menu-hero h1, .contact-hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero p, .menu-hero p, .contact-hero p {
+    font-size: 1.2rem;
+  }
+
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image {
+    max-width: 100%;
+  }
+
+  .menu-item {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 0;
+  }
+
+  .item-price {
+    margin-top: 0.5rem;
+    margin-left: 0;
+  }
+}
+
+/* Google Maps Karte */
+.map-container {
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 600px;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+/* Responsive Stile für die Kontaktseite */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .map-container {
+    height: 250px;
+  }
+}
+
+
+
+
+
+/* Ladeanimation */
+#loading-animation {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: #ca8e46; /* Hintergrundfarbe (kann angepasst werden) */
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 1000; /* Über allem anderen */
+animation: fadeOut 1s ease-in-out 1s forwards; /* Animation nach 2 Sekunden */
+}
+
+.loading-content {
+text-align: center;
+}
+
+.loading-text {
+font-family: 'Playfair Display', serif;
+font-size: 4rem;
+color: #fff; /* Textfarbe */
+animation: slideUp 1s ease-in-out; /* Text-Animation */
+}
+
+/* Text-Animation: Text gleitet nach oben */
+@keyframes slideUp {
+0% {
+  opacity: 0;
+  transform: translateY(20px);
+}
+100% {
+  opacity: 1;
+  transform: translateY(0);
+}
+}
+
+/* Hintergrund-Animation: Langsam ausblenden */
+@keyframes fadeOut {
+0% {
+  opacity: 1;
+}
+100% {
+  opacity: 0;
+  visibility: hidden; /* Versteckt das Element nach der Animation */
+}
+}
