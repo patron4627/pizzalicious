@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Sümela Grillhaus - Speisekarte</title>
+  <title> PIZZALICIOUS - Speisekarte</title>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
@@ -12,7 +12,10 @@
 
   <header>
     <nav>
-      <div class="logo">Sümela Grillhaus</div>
+      <div class="logo-container">
+        <img src="logo.png" alt="logo" loading="eager" class="nav-logo">
+        <div class="logo">PIZZALICIOUS</div>
+      </div>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="speisekarte.html">Speisekarte</a></li>
@@ -30,11 +33,6 @@
   <main>
     <!-- Hero-Sektion mit Video -->
     <section class="menu-hero">
-      <video autoplay muted loop playsinline preload="metadata" loading="eager" class="hero-video">
-        <source src="menu-hero.webm" type="video/webm">
-        <source src="menu-hero.mp4" type="video/mp4">
-        Ihr Browser unterstützt das Video-Tag nicht.
-      </video>
       <div class="hero-content">
         <h1>Unsere Speisekarte</h1>
         <p>Entdecken Sie unsere köstlichen Gerichte, die mit frischen Zutaten zubereitet werden.</p>
@@ -125,17 +123,10 @@
 
 
   <footer>
-    <p>&copy; 2025 Sümela Grillhaus. Alle Rechte vorbehalten.</p>
+    <p>&copy; 2025 PIZZALICIOUS. Alle Rechte vorbehalten.</p>
   </footer>
 
-  <script src="script.js"></script>
-  <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/sw.js')
-        .then(() => console.log('Service Worker registered'))
-        .catch((error) => console.log('Service Worker registration failed:', error));
-    }
-  </script>
+
   
 </body>
 </html>

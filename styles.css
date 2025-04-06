@@ -14,7 +14,7 @@ h1, h2, h3 {
 
 /* Header */
 header {
-  background: rgba(202, 142, 70, 0.5); /* Transparenz auf 0.5 setzen */
+  background: rgba(255, 255, 255); /* Transparenz auf 0.5 setzen */
   position: fixed;
   width: 100%;
   top: 0;
@@ -33,10 +33,20 @@ nav {
 }
 
 .logo {
-  font-size: 1.75rem;
+  font-size: 1.25rem;
   font-weight: bold;
-  color: #fff;
+  color: rgb(0, 0, 0);
   font-family: 'Playfair Display', serif;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+.nav-logo {
+  height: 50px; /* Adjust the size as needed */
+  width: auto;
+  margin-right: 10px; /* Space between the logo and the text */
 }
 
 .nav-links {
@@ -51,7 +61,7 @@ nav {
 }
 
 .nav-links a {
-  color: #fff;
+  color: rgb(0, 0, 0);
   text-decoration: none;
   font-weight: 500;
   font-size: 1rem;
@@ -59,7 +69,7 @@ nav {
 }
 
 .nav-links a:hover {
-  color: #ffd700;
+  color: #000000;
   transform: translateY(-2px);
 }
 
@@ -72,7 +82,7 @@ nav {
 .burger div {
   width: 25px;
   height: 3px;
-  background: #fff;
+  background: rgb(0, 0, 0);
   margin: 4px;
   transition: all 0.3s ease;
 }
@@ -91,15 +101,26 @@ nav {
 }
 
 /* Hero-Sektion mit Video */
-.hero, .menu-hero {
-  position: relative;
-  height: 100vh;
-  overflow: hidden;
+
+.hero{
+  background: url('pizza.jpg') no-repeat center center/cover;
+  height: 100vh; /* Etwas kleiner als auf der Startseite */ 
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   color: #fff;
+  position: relative;
+}
+.menu-hero {
+  background: url('speisekarte.jpg') no-repeat center center/cover;
+  height: 100vh; /* Etwas kleiner als auf der Startseite */ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
 }
 
 .hero-video {
@@ -138,18 +159,21 @@ nav {
   font-size: 1.5rem;
   margin-bottom: 2rem;
 }
+
+
 .btn {
-  background: #ff5733;
-  color: #fff;
-  padding: 0.75rem 2rem;
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 1.25rem 2rem;
   text-decoration: none;
   border-radius: 5px;
   font-weight: 500;
   transition: background 0.3s ease;
+  border: 1px solid #000000; /* Added black border */
 }
 
 .btn:hover {
-  background: #e64a2e;
+  background: #bebebe;
 }
 
 /* Über uns Sektion */
@@ -328,7 +352,7 @@ display: block;
 
 .hero-content h1 {
   font-size: 3.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 5rem;
   font-family: 'Playfair Display', serif;
 }
 
@@ -471,7 +495,7 @@ footer {
     display: none;
     flex-direction: column;
     width: 100%;
-    background: rgba(202, 142, 70, 0.95);
+    background: rgba(255, 255, 255);
     position: absolute;
     top: 60px;
     left: 0;
@@ -558,7 +582,7 @@ top: 0;
 left: 0;
 width: 100%;
 height: 100%;
-background: #ca8e46; /* Hintergrundfarbe (kann angepasst werden) */
+background: #ffffff; /* Hintergrundfarbe (kann angepasst werden) */
 display: flex;
 justify-content: center;
 align-items: center;
@@ -573,9 +597,14 @@ text-align: center;
 .loading-text {
 font-family: 'Playfair Display', serif;
 font-size: 4rem;
-color: #fff; /* Textfarbe */
+color: rgb(0, 0, 0); /* Textfarbe */
 animation: slideUp 1s ease-in-out; /* Text-Animation */
 }
+
+
+.nav-logo-animation {
+  animation: slideUp 1s ease-in-out; /* Text-Animation */
+  }
 
 /* Text-Animation: Text gleitet nach oben */
 @keyframes slideUp {

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sümela Grillhaus</title>
+  <title>PIZZALICIOUS</title>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
@@ -11,12 +11,16 @@
 <!-- Ladeanimation -->
 <div id="loading-animation">
   <div class="loading-content">
-    <h1 class="loading-text">Sümela Grillhaus</h1>
+    <img src="logo.png" alt="logo" loading="eager" class="nav-logo-animation">
+   <!-- <h1 class="loading-text">PIZZALICIOUS</h1>-->
   </div>
 </div>
   <header>
     <nav>
-      <div class="logo">Sümela Grillhaus</div>
+      <div class="logo-container">
+        <img src="logo.png" alt="logo" loading="eager" class="nav-logo">
+        <div class="logo">PIZZALICIOUS</div>
+      </div>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="speisekarte.html">Speisekarte</a></li>
@@ -34,16 +38,9 @@
   <main>
     <!-- Hero-Sektion mit Video -->
     <section class="hero">
-      <video autoplay muted loop playsinline preload="metadata" loading="eager" class="hero-video">
-        <source src="hero.mp4" type="video/mp4">
-        Ihr Browser unterstützt das Video-Tag nicht.
-      </video>
       <div class="hero-content">
-        <h1>Willkommen im Sümela Grillhaus</h1>
-        <p>Genießen Sie authentische Küche in modernem Ambiente.</p>
-      <!--  <a href="speisekarte.html" class="btn">Zur Speisekarte</a> -->
-        	<!-- If you would like to customize the button, remove or change the "class" attribute inside the <span> tag -->
-<span class="btn" data-glf-cuid="6b4a1268-bc5e-4cca-bccf-26b9a8309349" data-glf-ruid="03612477-8aed-4778-b296-d183eeb8cb35" >MENÜ ansehen & bestellen</span>
+        <h1>Herzlich Willkomen bei PIZZALICIOUS</h1>
+        <span class="btn" data-glf-cuid="6b4a1268-bc5e-4cca-bccf-26b9a8309349" data-glf-ruid="03612477-8aed-4778-b296-d183eeb8cb35" >MENÜ ansehen & bestellen</span>
 <script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async ></script>
       </div>
     </section>
@@ -63,17 +60,9 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 Sümela Grillhaus. Alle Rechte vorbehalten.</p>
+    <p>&copy; 2025 PIZZALICIOUS. Alle Rechte vorbehalten.</p>
   </footer>
 
   <script src="script.js"></script>
-  <script>
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/sw.js')
-        .then(() => console.log('Service Worker registered'))
-        .catch((error) => console.log('Service Worker registration failed:', error));
-    }
-  </script>
-  
 </body>
 </html>
