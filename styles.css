@@ -14,7 +14,7 @@ h1, h2, h3 {
 
 /* Header */
 header {
-  background: rgba(255, 255, 255); /* Transparenz auf 0.5 setzen */
+  background: rgba(255, 255, 255);
   position: fixed;
   width: 100%;
   top: 0;
@@ -44,9 +44,9 @@ nav {
   align-items: center;
 }
 .nav-logo {
-  height: 50px; /* Adjust the size as needed */
+  height: 50px;
   width: auto;
-  margin-right: 10px; /* Space between the logo and the text */
+  margin-right: 10px;
 }
 
 .nav-links {
@@ -73,7 +73,6 @@ nav {
   transform: translateY(-2px);
 }
 
-
 .burger {
   display: none;
   flex-direction: column;
@@ -88,7 +87,6 @@ nav {
   transition: all 0.3s ease;
 }
 
-/* Burger-Menü Animation */
 .burger.active .line1 {
   transform: rotate(-45deg) translate(-5px, 6px);
 }
@@ -101,76 +99,63 @@ nav {
   transform: rotate(45deg) translate(-5px, -6px);
 }
 
-/* Hero-Sektion mit Video */
-
-.hero{
-  background: url('pizza.jpg') no-repeat center center/cover;
-  height: 100vh; /* Etwas kleiner als auf der Startseite */ 
+/* Hero-Sektion */
+.hero-base {
+  background: no-repeat center center/cover;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   color: #fff;
   position: relative;
+}
+
+.hero {
+  background-image: url('pizza.webp');
 }
 .menu-hero {
-  background: url('speisekarte.jpg') no-repeat center center/cover;
-  height: 100vh; /* Etwas kleiner als auf der Startseite */ 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: #fff;
-  position: relative;
+  background-image: url('speisekarte.webp');
+}
+.contact-hero {
+  background-image: url('contact-hero.webp');
 }
 
-.hero-video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transform: translate(-50%, -50%);
-  z-index: -1;
-}
-
-.hero::before, .menu-hero::before {
+.hero-base::before {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7); /* Dunklerer Overlay (0.7 statt 0.5) */
+  background: rgba(0, 0, 0, 0.7);
   z-index: 0;
 }
 
-.hero-content, .menu-hero .hero-content {
+.hero-content {
   position: relative;
   z-index: 1;
 }
 
-.hero h1, .menu-hero h1 {
+.hero-base h1 {
   font-size: 4rem;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
-.hero p, .menu-hero p {
+.hero-base p {
   font-size: 1.5rem;
   margin-bottom: 2rem;
 }
 
-
 .btn {
-  background: #ffffff;
+  background: #f0f0f0;
   color: rgb(0, 0, 0);
   padding: 1.25rem 2rem;
   text-decoration: none;
   border-radius: 5px;
   font-weight: 500;
   transition: background 0.3s ease;
-  border: 1px solid #000000; /* Added black border */
+  border: 1px solid #000000;
 }
 
 .btn:hover {
@@ -288,78 +273,40 @@ nav {
   margin-left: 1rem;
   white-space: nowrap;
 }
+
 /* Tabs */
 .menu-tabs {
-display: flex;
-justify-content: center;
-margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
 }
 
 .tab-link {
-background: none;
-border: none;
-padding: 0.75rem 1.5rem;
-font-size: 1rem;
-font-weight: 500;
-color: #333;
-cursor: pointer;
-transition: color 0.3s ease, border-bottom 0.3s ease;
+  background: none;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
 }
 
 .tab-link.active {
-color: #ca8e46;
-border-bottom: 2px solid #ca8e46;
+  color: #ca8e46;
+  border-bottom: 2px solid #ca8e46;
 }
 
 .tab-link:hover {
-color: #ca8e46;
+  color: #ca8e46;
 }
 
-/* Kategorien */
 .menu-category {
-display: none;
+  display: none;
 }
 
 .menu-category.active {
-display: block;
-}
-
-/* Hero-Sektion (Kontaktseite) */
-.contact-hero {
-  background: url('contact-hero.jpg') no-repeat center center/cover;
-  height: 100vh; /* Etwas kleiner als auf der Startseite */ 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  color: #fff;
-  position: relative;
-}
-
-.contact-hero::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Dunkler Overlay für bessere Lesbarkeit */
-}
-
-.hero-content {
-  position: relative;
-  z-index: 1;
-}
-
-.hero-content h1 {
-  font-size: 3.5rem;
-  margin-bottom: 5rem;
-  font-family: 'Playfair Display', serif;
-}
-
-.hero-content p {
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
+  display: block;
 }
 
 /* Kontakt-Sektion */
@@ -420,21 +367,6 @@ display: block;
   margin-bottom: 0.5rem;
 }
 
-/* Responsive Stile für die Kontaktseite */
-@media (max-width: 768px) {
-  .contact-hero h1 {
-    font-size: 2.5rem;
-  }
-
-  .contact-hero p {
-    font-size: 1.2rem;
-  }
-
-  .contact-info {
-    padding: 1.5rem;
-  }
-}
-
 /* Impressum-Sektion */
 .impressum {
   padding: 4rem 2rem;
@@ -490,13 +422,63 @@ footer {
   margin-top: 2rem;
 }
 
+/* Google Maps Karte */
+.map-container {
+  margin-top: 2rem;
+  width: 100%;
+  max-width: 600px;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Ladeanimation */
+#loading-animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeOut 1s ease-in-out 1s forwards;
+}
+
+.loading-content {
+  text-align: center;
+}
+
+.nav-logo-animation {
+  animation: slideUp 1s ease-in-out;
+}
+
+@keyframes slideUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; visibility: hidden; }
+}
+
 /* Responsive Stile */
 @media (max-width: 768px) {
   .nav-links {
     display: none;
     flex-direction: column;
     width: 100%;
-    background: rgba(255, 255, 255);
+    background: rgba(255,255, 255);
     position: absolute;
     top: 60px;
     left: 0;
@@ -515,11 +497,11 @@ footer {
     display: flex;
   }
 
-  .hero h1, .menu-hero h1, .contact-hero h1 {
+  .hero-base h1 {
     font-size: 3rem;
   }
 
-  .hero p, .menu-hero p, .contact-hero p {
+  .hero-base p {
     font-size: 1.2rem;
   }
 
@@ -542,26 +524,7 @@ footer {
     margin-top: 0.5rem;
     margin-left: 0;
   }
-}
 
-/* Google Maps Karte */
-.map-container {
-  margin-top: 2rem;
-  width: 100%;
-  max-width: 600px;
-  height: 300px;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-
-.map-container iframe {
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
-/* Responsive Stile für die Kontaktseite */
-@media (max-width: 768px) {
   .contact-container {
     flex-direction: column;
     gap: 2rem;
@@ -570,62 +533,4 @@ footer {
   .map-container {
     height: 250px;
   }
-}
-
-
-
-
-
-/* Ladeanimation */
-#loading-animation {
-position: fixed;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background: #ffffff; /* Hintergrundfarbe (kann angepasst werden) */
-display: flex;
-justify-content: center;
-align-items: center;
-z-index: 1000; /* Über allem anderen */
-animation: fadeOut 1s ease-in-out 1s forwards; /* Animation nach 2 Sekunden */
-}
-
-.loading-content {
-text-align: center;
-}
-
-.loading-text {
-font-family: 'Playfair Display', serif;
-font-size: 4rem;
-color: rgb(0, 0, 0); /* Textfarbe */
-animation: slideUp 1s ease-in-out; /* Text-Animation */
-}
-
-
-.nav-logo-animation {
-  animation: slideUp 1s ease-in-out; /* Text-Animation */
-  }
-
-/* Text-Animation: Text gleitet nach oben */
-@keyframes slideUp {
-0% {
-  opacity: 0;
-  transform: translateY(20px);
-}
-100% {
-  opacity: 1;
-  transform: translateY(0);
-}
-}
-
-/* Hintergrund-Animation: Langsam ausblenden */
-@keyframes fadeOut {
-0% {
-  opacity: 1;
-}
-100% {
-  opacity: 0;
-  visibility: hidden; /* Versteckt das Element nach der Animation */
-}
 }

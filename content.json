@@ -1,0 +1,100 @@
+{
+    "index": {
+      "hero": {
+        "title": "Herzlich Willkommen bei Pizzalicious",
+        "buttonText": "MENÜ ansehen & bestellen"
+      },
+      "about": {
+        "title": "Über uns Hallo",
+        "text": "Wir sind ein familiengeführtes Restaurant in Stuttgart, das sich auf frische Zutaten und traditionelle Rezepte spezialisiert hat. Unsere Gerichte werden mit Liebe zubereitet und bieten ein unvergessliches Geschmackserlebnis."
+      }
+    },
+    "speisekarte": {
+      "hero": {
+        "title": "Unsere Speisekarte",
+        "text": "Entdecken Sie unsere köstlichen Gerichte, die mit frischen Zutaten in Stuttgart zubereitet werden."
+      },
+      "menu": {
+        "vorspeisen": {
+          "title": "Vorspeisen",
+          "items": [
+            {
+              "name": "Bruschetta",
+              "description": "Klassisches italienisches Bruschetta mit Tomaten, Basilikum und Olivenöl.",
+              "price": "5,90 €"
+            },
+            {
+              "name": "Caprese",
+              "description": "Frische Mozzarella, Tomaten und Basilikum, beträufelt mit Balsamico-Glasur.",
+              "price": "6,50 €"
+            }
+          ]
+        },
+        "hauptgerichte": {
+          "title": "Hauptgerichte",
+          "items": [
+            {
+              "name": "Spaghetti Bolognese",
+              "description": "Spaghetti mit einer reichhaltigen Bolognese-Sauce aus Rindfleisch.",
+              "price": "12,90 €"
+            },
+            {
+              "name": "Pizza Margherita",
+              "description": "Klassische Pizza mit Tomatensauce, Mozzarella und frischem Basilikum.",
+              "price": "9,90 €"
+            },
+            {
+              "name": "Hamsi Tava",
+              "description": "Hamsi Tava aus Trabzon.",
+              "price": "14,90 €"
+            }
+          ]
+        },
+        "desserts": {
+          "title": "Desserts",
+          "items": [
+            {
+              "name": "Tiramisu",
+              "description": "Italienischer Klassiker mit Mascarpone, Kaffee und Kakao.",
+              "price": "4,90 €"
+            },
+            {
+              "name": "Panna Cotta",
+              "description": "Cremiges Dessert mit Vanille und frischen Beeren.",
+              "price": "5,50 €"
+            }
+          ]
+        }
+      }
+    },
+    "kontakt": {
+      "hero": {
+        "title": "Kontakt",
+        "text": "Besuchen Sie uns in Stuttgart oder kontaktieren Sie uns direkt."
+      },
+      "contact": {
+        "title": "Unsere Kontaktdaten",
+        "address": "Musterstraße 123, 12345 Stuttgart",
+        "phone": "01234 567890",
+        "email": "info@pizzalicious.de",
+        "openingHours": [
+          "Mo–Fr: 12:00–22:00 Uhr",
+          "Sa–So: 10:00–23:00 Uhr"
+        ]
+      }
+    },
+    "impressum": {
+      "title": "Impressum",
+      "company": "PIZZALICIOUS",
+      "owner": "Max Mustermann",
+      "address": "Musterstraße 123, 12345 Stuttgart",
+      "phone": "01234 567890",
+      "email": "info@pizzalicious.de",
+      "vatId": "DE123456789",
+      "responsible": "Max Mustermann, Musterstraße 123, 12345 Stuttgart",
+      "disclaimer": "Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich."
+    },
+    "footer": {
+      "text": "© 2025 Pizzalicious Stuttgart. Alle Rechte vorbehalten."
+    }
+  }

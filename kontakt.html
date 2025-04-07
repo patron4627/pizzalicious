@@ -3,16 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> PIZZALICIOUS - Kontakt</title>
+  <meta name="description" content="Kontaktieren Sie Pizzalicious in Stuttgart - besuchen Sie uns in der Musterstraße 123!">
+  <meta name="keywords" content="Pizzeria Stuttgart, Kontakt Pizzalicious, Restaurant Stuttgart">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Pizzalicious">
+  <title>Pizzalicious - Kontakt | Pizzeria Stuttgart</title>
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
- 
   <header>
     <nav>
       <div class="logo-container">
-        <img src="logo.png" alt="logo" loading="eager" class="nav-logo">
+        <img src="logo.png" alt="Pizzalicious Logo" loading="eager" class="nav-logo">
         <div class="logo">PIZZALICIOUS</div>
       </div>
       <ul class="nav-links">
@@ -21,7 +24,7 @@
         <li><a href="kontakt.html">Kontakt</a></li>
         <li><a href="impressum.html">Impressum</a></li>
       </ul>
-      <div class="burger">
+      <div class="burger" aria-label="Menü öffnen/schließen" role="button">
         <div class="line1"></div>
         <div class="line2"></div>
         <div class="line3"></div>
@@ -30,23 +33,20 @@
   </header>
 
   <main>
-    <!-- Hero-Sektion mit Bild -->
-    <section class="contact-hero">
+    <section class="hero-base contact-hero">
       <div class="hero-content">
         <h1>Kontakt</h1>
-        <p>Besuchen Sie uns oder kontaktieren Sie uns direkt.</p>
+        <p>Besuchen Sie uns in Stuttgart oder kontaktieren Sie uns direkt.</p>
       </div>
     </section>
 
-    <!-- Kontakt-Sektion -->
     <section class="contact">
       <div class="contact-container">
-        <!-- Kontaktdaten -->
         <div class="contact-info">
           <h2>Unsere Kontaktdaten</h2>
-          <p><strong>Adresse:</strong> Musterstraße 123, 12345 Musterstadt</p>
+          <p><strong>Adresse:</strong> Musterstraße 123, 12345 Stuttgart</p>
           <p><strong>Telefon:</strong> <a href="tel:+491234567890">01234 567890</a></p>
-          <p><strong>E-Mail:</strong> <a href="mailto:info@restaurant-name.de">info@restaurant-name.de</a></p>
+          <p><strong>E-Mail:</strong> <a href="mailto:info@pizzalicious.de">info@pizzalicious.de</a></p>
           <p><strong>Öffnungszeiten:</strong></p>
           <ul>
             <li>Mo–Fr: 12:00–22:00 Uhr</li>
@@ -54,24 +54,23 @@
           </ul>
         </div>
 
-        <!-- Google Maps Karte -->
         <div class="map-container">
           <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.644479830293!2d9.225147399999999!3d48.845919699999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4799cf75b8b9c6e3%3A0x430f66f85c8c452d!2sS%C3%BCmela%20Grillhaus!5e0!3m2!1sde!2sde!4v1742098557958!5m2!1sde!2sde">
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.372891987654!2d9.182930615614784!3d48.77512597927988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDjCsDQ2JzMwLjUiTiA5wrAxMScwMi4yIkU!5e0!3m2!1sde!2sde!4v1742098557958!5m2!1sde!2sde"
             width="600"
             height="450"
             style="border:0;"
             allowfullscreen=""
             loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
         </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 PIZZALICIOUS. Alle Rechte vorbehalten.</p>
+    <p>&copy; 2025 Pizzalicious Stuttgart. Alle Rechte vorbehalten.</p>
   </footer>
 
   <script src="script.js"></script>

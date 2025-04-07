@@ -3,28 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> PIZZALICIOUS - Speisekarte</title>
+  <meta name="description" content="Entdecken Sie die Speisekarte von Pizzalicious in Stuttgart - frische Pizza, Pasta und mehr!">
+  <meta name="keywords" content="Speisekarte Stuttgart, Pizzeria Stuttgart, Pizza bestellen">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Pizzalicious">
+  <title>Pizzalicious - Speisekarte | Pizzeria Stuttgart</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="preload" href="speisekarte.jpg" as="image">
+  <link rel="preload" href="speisekarte.webp" as="image">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
-<body>
-
-
+<body data-page="speisekarte">
   <header>
     <nav>
       <div class="logo-container">
-        <img src="logo.png" alt="logo" loading="eager" class="nav-logo">
+        <img src="logo.png" alt="Pizzalicious Logo" loading="eager" class="nav-logo">
         <div class="logo">PIZZALICIOUS</div>
       </div>
-     
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="speisekarte.html">Speisekarte</a></li>
         <li><a href="kontakt.html">Kontakt</a></li>
         <li><a href="impressum.html">Impressum</a></li>
       </ul>
-      <div class="burger">
+      <div class="burger" aria-label="Menü öffnen/schließen" role="button">
         <div class="line1"></div>
         <div class="line2"></div>
         <div class="line3"></div>
@@ -33,102 +34,93 @@
   </header>
 
   <main>
-    <!-- Hero-Sektion mit Video -->
-    <section class="menu-hero">
+    <section class="hero-base menu-hero">
       <div class="hero-content">
         <h1>Unsere Speisekarte</h1>
-        <p>Entdecken Sie unsere köstlichen Gerichte, die mit frischen Zutaten zubereitet werden.</p>
+        <p>Entdecken Sie unsere köstlichen Gerichte, die mit frischen Zutaten in Stuttgart zubereitet werden.</p>
       </div>
     </section>
 
-   <!-- Speisekarten-Sektion -->
-<section class="menu">
-  <!-- Tabs für die Kategorien -->
-  <div class="menu-tabs">
-    <button class="tab-link active" data-category="vorspeisen">Vorspeisen</button>
-    <button class="tab-link" data-category="hauptgerichte">Hauptgerichte</button>
-    <button class="tab-link" data-category="desserts">Desserts</button>
-  </div>
+    <section class="menu">
+      <div class="menu-tabs">
+        <button class="tab-link active" data-category="vorspeisen">Vorspeisen</button>
+        <button class="tab-link" data-category="hauptgerichte">Hauptgerichte</button>
+        <button class="tab-link" data-category="desserts">Desserts</button>
+      </div>
 
-  <!-- Vorspeisen -->
-  <div id="vorspeisen" class="menu-category active">
-    <h3>Vorspeisen</h3>
-    <ul class="menu-list">
-      <li class="menu-item">
-        <div class="item-info">
-          <h4>Bruschetta</h4>
-          <p>Klassisches italienisches Bruschetta mit Tomaten, Basilikum und Olivenöl.</p>
-        </div>
-        <div class="item-price">5,90 €</div>
-      </li>
-      <li class="menu-item">
-        <div class="item-info">
-          <h4>Caprese</h4>
-          <p>Frische Mozzarella, Tomaten und Basilikum, beträufelt mit Balsamico-Glasur.</p>
-        </div>
-        <div class="item-price">6,50 €</div>
-      </li>
-    </ul>
-  </div>
+      <div id="vorspeisen" class="menu-category active">
+        <h3>Vorspeisen</h3>
+        <ul class="menu-list">
+          <li class="menu-item">
+            <div class="item-info">
+              <h4>Bruschetta</h4>
+              <p>Klassisches italienisches Bruschetta mit Tomaten, Basilikum und Olivenöl.</p>
+            </div>
+            <div class="item-price">5,90 €</div>
+          </li>
+          <li class="menu-item">
+            <div class="item-info">
+              <h4>Caprese</h4>
+              <p>Frische Mozzarella, Tomaten und Basilikum, beträufelt mit Balsamico-Glasur.</p>
+            </div>
+            <div class="item-price">6,50 €</div>
+          </li>
+        </ul>
+      </div>
 
-  <!-- Hauptgerichte -->
-  <div id="hauptgerichte" class="menu-category">
-    <h3>Hauptgerichte</h3>
-    <ul class="menu-list">
-      <li class="menu-item">
-        <div class="item-info">
-          <h4>Spaghetti Bolognese</h4>
-          <p>Spaghetti mit einer reichhaltigen Bolognese-Sauce aus Rindfleisch.</p>
-        </div>
-        <div class="item-price">12,90 €</div>
-      </li>
-      <li class="menu-item">
-        <div class="item-info">
-          <h4>Pizza Margherita</h4>
-          <p>Klassische Pizza mit Tomatensauce, Mozzarella und frischem Basilikum.</p>
-        </div>
-        <div class="item-price">9,90 €</div>
-      </li>
-      <li class="menu-item">
-        <div class="item-info">
-          <h4>Hamsi Tava</h4>
-          <p>Hamsi Tava aus Trabzon.</p>
-        </div>
-        <div class="item-price">14,90 €</div>
-      </li>
-    </ul>
-  </div>
+      <div id="hauptgerichte" class="menu-category">
+        <h3>Hauptgerichte</h3>
+        <ul class="menu-list">
+          <li class="menu-item">
+            <div class="item-info">
+              <h4>Spaghetti Bolognese</h4>
+              <p>Spaghetti mit einer reichhaltigen Bolognese-Sauce aus Rindfleisch.</p>
+            </div>
+            <div class="item-price">12,90 €</div>
+          </li>
+          <li class="menu-item">
+            <div class="item-info">
+              <h4>Pizza Margherita</h4>
+              <p>Klassische Pizza mit Tomatensauce, Mozzarella und frischem Basilikum.</p>
+            </div>
+            <div class="item-price">9,90 €</div>
+          </li>
+          <li class="menu-item">
+            <div class="item-info">
+              <h4>Hamsi Tava</h4>
+              <p>Hamsi Tava aus Trabzon.</p>
+            </div>
+            <div class="item-price">14,90 €</div>
+          </li>
+        </ul>
+      </div>
 
-  <!-- Desserts -->
-  <div id="desserts" class="menu-category">
-    <h3>Desserts</h3>
-    <ul class="menu-list">
-      <li class="menu-item">
-        <div class="item-info">
-          <h4>Tiramisu</h4>
-          <p>Italienischer Klassiker mit Mascarpone, Kaffee und Kakao.</p>
-        </div>
-        <div class="item-price">4,90 €</div>
-      </li>
-      <li class="menu-item">
-        <div class="item-info">
-          <h4>Panna Cotta</h4>
-          <p>Cremiges Dessert mit Vanille und frischen Beeren.</p>
-        </div>
-        <div class="item-price">5,50 €</div>
-      </li>
-    </ul>
-  </div>
-</section>
+      <div id="desserts" class="menu-category">
+        <h3>Desserts</h3>
+        <ul class="menu-list">
+          <li class="menu-item">
+            <div class="item-info">
+              <h4>Tiramisu</h4>
+              <p>Italienischer Klassiker mit Mascarpone, Kaffee und Kakao.</p>
+            </div>
+            <div class="item-price">4,90 €</div>
+          </li>
+          <li class="menu-item">
+            <div class="item-info">
+              <h4>Panna Cotta</h4>
+              <p>Cremiges Dessert mit Vanille und frischen Beeren.</p>
+            </div>
+            <div class="item-price">5,50 €</div>
+          </li>
+        </ul>
+      </div>
+    </section>
   </main>
- 
-
 
   <footer>
-    <p>&copy; 2025 PIZZALICIOUS. Alle Rechte vorbehalten.</p>
+    <p>&copy; 2025 Pizzalicious Stuttgart. Alle Rechte vorbehalten.</p>
   </footer>
 
   <script src="script.js"></script>
-  
 </body>
 </html>

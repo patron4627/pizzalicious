@@ -3,23 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PIZZALICIOUS</title>
+  <meta name="description" content="Pizzalicious - Ihre Pizzeria in Stuttgart mit frischen Zutaten und traditionellen Rezepten. Bestellen Sie jetzt online!">
+  <meta name="keywords" content="Pizzeria Stuttgart, Pizza bestellen Stuttgart, italienisches Restaurant Stuttgart, Pizzalicious">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Pizzalicious">
+  <title>Pizzalicious - Pizzeria in Stuttgart</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="preload" href="pizza.jpg" as="image">
+  <link rel="preload" href="pizza.webp" as="image">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
-<body>
+<body data-page="index">
 <!-- Ladeanimation -->
 <div id="loading-animation">
   <div class="loading-content">
-    <img src="logo.png" alt="logo" loading="eager" class="nav-logo-animation">
-   <!-- <h1 class="loading-text">PIZZALICIOUS</h1>-->
+    <img src="logo.png" alt="Pizzalicious Logo" loading="eager" class="nav-logo-animation">
   </div>
 </div>
   <header>
     <nav>
       <div class="logo-container">
-        <img src="logo.png" alt="logo" loading="eager" class="nav-logo">
+        <img src="logo.png" alt="Pizzalicious Logo" loading="eager" class="nav-logo">
         <div class="logo">PIZZALICIOUS</div>
       </div>
       <ul class="nav-links">
@@ -28,7 +31,7 @@
         <li><a href="kontakt.html">Kontakt</a></li>
         <li><a href="impressum.html">Impressum</a></li>
       </ul>
-      <div class="burger">
+      <div class="burger" aria-label="Menü öffnen/schließen" role="button">
         <div class="line1"></div>
         <div class="line2"></div>
         <div class="line3"></div>
@@ -37,33 +40,53 @@
   </header>
 
   <main>
-    <!-- Hero-Sektion mit Video -->
-    <section class="hero">
+    <section class="hero-base hero">
       <div class="hero-content">
-        <h1>Herzlich Willkomen bei PIZZALICIOUS</h1>
-        <span class="btn" data-glf-cuid="6b4a1268-bc5e-4cca-bccf-26b9a8309349" data-glf-ruid="03612477-8aed-4778-b296-d183eeb8cb35" >MENÜ ansehen & bestellen</span>
-<script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async ></script>
+        <h1>Herzlich Willkommen bei Pizzalicious in Stuttgart</h1>
+        <span class="btn" data-glf-cuid="6b4a1268-bc5e-4cca-bccf-26b9a8309349" data-glf-ruid="03612477-8aed-4778-b296-d183eeb8cb35">MENÜ ansehen & bestellen</span>
+        <script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async></script>
       </div>
     </section>
 
-    <!-- Über uns Sektion -->
     <section class="about">
       <div class="about-container">
         <div class="about-text">
           <h2>Über uns</h2>
-          <p>Wir sind ein familiengeführtes Restaurant, das sich auf frische Zutaten und traditionelle Rezepte spezialisiert hat. Unsere Gerichte werden mit Liebe zubereitet und bieten ein unvergessliches Geschmackserlebnis.</p>
+          <p>Wir sind ein familiengeführtes Restaurant in Stuttgart, das sich auf frische Zutaten und traditionelle Rezepte spezialisiert hat. Unsere Gerichte werden mit Liebe zubereitet und bieten ein unvergessliches Geschmackserlebnis.</p>
         </div>
         <div class="about-image">
-          <img src="about.jpg" alt="About Bild" loading="eager">
+          <img src="about.webp" alt="Unser Restaurant Pizzalicious in Stuttgart" loading="eager">
         </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 PIZZALICIOUS. Alle Rechte vorbehalten.</p>
+    <p>&copy; 2025 Pizzalicious Stuttgart. Alle Rechte vorbehalten.</p>
   </footer>
 
   <script src="script.js"></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Pizzalicious",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Musterstraße 123",
+      "addressLocality": "Stuttgart",
+      "postalCode": "12345",
+      "addressCountry": "DE"
+    },
+    "telephone": "+491234567890",
+    "url": "https://www.pizzalicious.de",
+    "openingHours": [
+      "Mo-Fr 12:00-22:00",
+      "Sa-Su 10:00-23:00"
+    ],
+    "servesCuisine": "Italienisch",
+    "priceRange": "€€"
+  }
+  </script>
 </body>
 </html>
