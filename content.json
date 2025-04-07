@@ -24,13 +24,8 @@
               "price": "5,90 €"
             },
             {
-              "name": "Caprese",
-              "description": "Frische Mozzarella, Tomaten und Basilikum, beträufelt mit Balsamico-Glasur.",
-              "price": "6,50 €"
-            }
-            {
               "name": "Pizza Salami",
-              "description": "Tomatensoße, Mozzarella, Salami.",
+              "description": "Frische Mozzarella, Tomaten und Basilikum, beträufelt mit Balsamico-Glasur.",
               "price": "6,50 €"
             }
           ]
