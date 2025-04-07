@@ -16,7 +16,7 @@ navLinks.querySelectorAll('a').forEach(link => {
 
 // Inhalte dynamisch laden
 async function loadContent() {
-  const response = await fetch('content.json');
+  const response = await fetch('content.json?nocache=' + new Date().getTime());
   const content = await response.json();
   const page = document.body.dataset.page; // Wird in HTML gesetzt
 
