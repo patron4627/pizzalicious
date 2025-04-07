@@ -1,3 +1,4 @@
+
 // Burger-Menü für Mobilgeräte
 const burger = document.querySelector('.burger');
 const navLinks = document.querySelector('.nav-links');
@@ -16,6 +17,8 @@ navLinks.querySelectorAll('a').forEach(link => {
     navLinks.classList.remove('active');
   });
 });
+
+
 // Speiskarte tabs
 document.addEventListener('DOMContentLoaded', function () {
   const tabLinks = document.querySelectorAll('.tab-link');
