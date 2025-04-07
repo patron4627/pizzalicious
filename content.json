@@ -5,7 +5,7 @@
         "buttonText": "MENÜ ansehen & bestellen"
       },
       "about": {
-        "title": "Über uns Hallo",
+        "title": "Über uns",
         "text": "Wir sind ein familiengeführtes Restaurant in Stuttgart, das sich auf frische Zutaten und traditionelle Rezepte spezialisiert hat. Unsere Gerichte werden mit Liebe zubereitet und bieten ein unvergessliches Geschmackserlebnis."
       }
     },
@@ -26,6 +26,11 @@
             {
               "name": "Caprese",
               "description": "Frische Mozzarella, Tomaten und Basilikum, beträufelt mit Balsamico-Glasur.",
+              "price": "6,50 €"
+            }
+            {
+              "name": "Pizza Salami",
+              "description": "Tomatensoße, Mozzarella, Salami.",
               "price": "6,50 €"
             }
           ]
