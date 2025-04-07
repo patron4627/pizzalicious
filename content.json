@@ -16,7 +16,7 @@
       },
       "menu": {
         "vorspeisen": {
-          "title": "Vorspeisen",
+          "title": "Pizza",
           "items": [
             {
               "name": "Bruschetta",
@@ -32,6 +32,11 @@
               "name": "Pizza Margeritha",
               "description": "Frische Mozzarella, Tomaten und Basilikum.",
               "price": "9,50 €"
+            },
+            {
+              "name": "Pizza Thungfisch",
+              "description": "Frische Mozzarella, Tomaten, Thunfisch und Zwiebel",
+              "price": "7,50 €"
             }
         
           ]
