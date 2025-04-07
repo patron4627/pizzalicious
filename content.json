@@ -27,7 +27,13 @@
               "name": "Pizza Salami",
               "description": "Frische Mozzarella, Tomaten und Basilikum, beträufelt mit Balsamico-Glasur.",
               "price": "6,50 €"
+            },
+            {
+              "name": "Pizza Margeritha",
+              "description": "Frische Mozzarella, Tomaten und Basilikum.",
+              "price": "9,50 €"
             }
+        
           ]
         },
         "hauptgerichte": {
@@ -49,9 +55,9 @@
               "price": "14,90 €"
             },
             {
-      "name": "TEST: Pizza Quattro Formaggi",
-      "description": "Pizza mit vier Käsesorten.",
-      "price": "11,90 €"
+              "name": "Pizza Quattro Formaggi",
+              "description": "Pizza mit vier Käsesorten.",
+              "price": "11,90 €"
            } 
           ]
         },
